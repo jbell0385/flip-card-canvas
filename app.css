@@ -45,7 +45,7 @@
     position: relative;
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
-    z-index: 2;
+    z-index: 1;
     margin-bottom: 30px;
 }
 
@@ -53,6 +53,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index:2;
     background: white;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
@@ -84,7 +85,9 @@
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    /* min-height: 150px; */
+    width:100%;
+    height:auto;
 }
 
 .frontside .card .card-body img {
